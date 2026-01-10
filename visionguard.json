@@ -1,0 +1,21 @@
+{
+  "project": "genesis-alpha-prime",
+  "version": "1.0.0",
+  "assertions": [
+    "Page loads without errors",
+    "Header text 'Genesis Alpha Prime' is visible",
+    "Subtitle 'VisionGuard Circuit Breaker Pilot Project' is visible",
+    "Green status indicator dot is present",
+    "Status text 'System Operational' is visible",
+    "VisionGuard badge is visible at bottom",
+    "No broken layout or overlapping elements",
+    "Background gradient is properly rendered",
+    "Text is readable with sufficient contrast"
+  ],
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "health_endpoint": "/health",
+  "wait_for_ready": 5000
+}
