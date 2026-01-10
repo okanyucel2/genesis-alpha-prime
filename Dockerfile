@@ -10,9 +10,9 @@ COPY health.html /usr/share/nginx/html/
 # Copy custom nginx config for health endpoint
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose port 80 (Render uses this by default)
-EXPOSE 80
+# Expose port 8080 (used by local simulation service)
+EXPOSE 8080
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-    CMD wget --quiet --tries=1 --spider http://localhost/health || exit 1
+    CMD wget --quiet --tries=1 --spider http://localhost:8080/health || exit 1
