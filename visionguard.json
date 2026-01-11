@@ -1,6 +1,10 @@
 {
   "project": "genesis-alpha-prime",
   "version": "1.0.0",
+  "render": {
+    "service_id": "srv-d5hk34i4d50c7394ni6g",
+    "auto_deploy_on_pass": true
+  },
   "assertions": [
     "Page loads without errors",
     "Header text 'Genesis Alpha Prime' is visible",
